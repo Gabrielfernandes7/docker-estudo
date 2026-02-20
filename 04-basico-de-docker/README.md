@@ -31,3 +31,19 @@ Docker Container: a instância em execução de uma imagem Docker.
 * `docker container rm <container>`: Remove um container parado.
 
 * `docker image rm <image>`: Remove uma imagem da sua máquina local.
+
+Exemplo de imagem Docker:
+
+```Dockerfile
+FROM python:3.10-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+```
