@@ -2,7 +2,7 @@
 
 ## O que são conteineres?
 
-Containers são ambientes de software leves, portáveis e isolados que empacotam aplicações junto com suas dependências para execução consistente em diferentes plataformas.
+Um container é um pacote de software leve, independente e executável que inclui todas as dependências (bibliotecas, binários e arquivos de configuração) necessárias para executar uma aplicação. Containers isolam as aplicações do ambiente em que estão rodando, garantindo que funcionem de forma consistente em diferentes sistemas.
 
 ## Por que nós precisamos dos conteiners?
 
